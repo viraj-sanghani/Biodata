@@ -11,9 +11,10 @@ body {
 .app {
   padding: 0 50px;
   width: 1110px;
-  height: 1530px;
+  height: 1570px;
   overflow: hidden;
   position: relative;
+  border: 1px solid;
 }
 
 .bg {
@@ -109,11 +110,11 @@ body {
 
 .img-container {
   width: 1110px;
-  height: 1530px;
+  height: 1570px;
   background: #f1f5f9;
 }
 .img-gallery {
-  height: calc(100% - 30px);
+  height: calc(100% - 20px);
   margin: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +131,7 @@ body {
 }
 
 .left {
+  margin-top: 15px;
   width: 40%;
 }
 .left .img-wrap {
@@ -139,6 +141,7 @@ body {
   margin-bottom: 15px;
 }
 .right {
+  margin-top: 15px;
   width: calc(60% - 15px);
   margin-left: 15px;
 }
