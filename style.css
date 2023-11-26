@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  border: 1px solid #f3f3f3;
+  margin: 50px 0;
+  padding: 0 50px;
+  width: 1110px;
+  height: 1530px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  background: url("assets/frame-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+}
+.header img {
+  width: 120px;
+}
+.header h3 {
+  font-size: 22px;
+  color: #0d0c84;
+}
+
+.content {
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.photo {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content section {
+  margin: 50px 0;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: goldenrod;
+  text-transform: uppercase;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background: goldenrod;
+  bottom: 0;
+  left: 0;
+}
+
+.detail-wrap {
+  display: flex;
+  font-size: 25px;
+  margin: 20px 0;
+}
+.detail-title {
+  width: 270px;
+  min-width: 270px;
+  font-weight: 500;
+}
+.detail-val {
+  position: relative;
+  padding-left: 50px;
+}
+.detail-val::before {
+  content: ":";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
