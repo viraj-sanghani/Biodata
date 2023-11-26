@@ -6,15 +6,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  /* display: flex;
-  justify-content: center; */
-  width: 1110px;
-  height: 1530px;
 }
 
 .app {
-  /* border: 1px solid #f3f3f3; */
-  margin: 50px 0;
   padding: 0 50px;
   width: 1110px;
   height: 1530px;
@@ -107,4 +101,54 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+/**********************************
+* Image Gallery
+**********************************/
+
+.img-container {
+  width: 1110px;
+  height: 1530px;
+  background: #f1f5f9;
+}
+.img-gallery {
+  height: calc(100% - 30px);
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.img-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.img-gallery .img-wrap {
+  box-shadow: 0 20px 25px -5px rgb(0, 106, 194, 0.2),
+    0 8px 10px -6px rgb(0, 106, 194, 0.2);
+}
+
+.left {
+  width: 40%;
+}
+.left .img-wrap {
+  height: 500px;
+}
+.left .img-wrap:first-child {
+  margin-bottom: 15px;
+}
+.right {
+  width: calc(60% - 15px);
+  margin-left: 15px;
+}
+.right .img-wrap {
+  height: 1015px;
+}
+.bottom {
+  margin-top: 15px;
+  width: 100%;
+}
+.bottom .img-wrap {
+  height: 1000px;
 }
